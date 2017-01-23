@@ -4,12 +4,14 @@
 \alias{kml_cortar}
 \title{Reduce un KML a otra geografia}
 \usage{
-kml_cortar(obj, condicion)
+kml_cortar(obj, condicion, verbose)
 }
 \arguments{
 \item{obj}{Objeto SpatialPolygonsDataFrame}
 
 \item{condicion}{condicion bajo cual filtrar}
+
+\item{verbose}{if TRUE prints the summary}
 }
 \description{
 Hace un subset de una geografia, para revisar una zona particular de un KML.

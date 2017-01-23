@@ -82,12 +82,17 @@ t_expkml <- function(obj, archivo,
 #' Hace un subset de una geografia, para revisar una zona particular de un KML.
 #' @param obj Objeto SpatialPolygonsDataFrame
 #' @param condicion condicion bajo cual filtrar
+#' @param verbose if TRUE prints the summary
 #' @export
-kml_cortar <- function(obj, condicion) {
+kml_cortar <- function(obj, condicion, verbose) {
   sub <- eval(substitute(condicion),
               envir=obj, enclos=parent.frame())
   cat("Recuerda quitar factores que han cambiado (para exportar solamente lo necesario). \n I.e: foo$Name <- factor(foo$Name)")
-  obj[sub, ]
+  f <- obj[sub, ]
+  if(verbose){
+    summary(f)
+  }
+  f
 }
 
 
