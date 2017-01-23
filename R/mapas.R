@@ -84,7 +84,7 @@ t_expkml <- function(obj, archivo,
 #' @param condicion condicion bajo cual filtrar
 #' @param verbose if TRUE prints the summary
 #' @export
-kml_cortar <- function(obj, condicion, verbose) {
+kml_cortar <- function(obj, condicion, verbose = TRUE) {
   sub <- eval(substitute(condicion),
               envir=obj, enclos=parent.frame())
   cat("Recuerda quitar factores que han cambiado (para exportar solamente lo necesario). \n I.e: foo$Name <- factor(foo$Name)")
