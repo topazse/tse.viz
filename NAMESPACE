@@ -3,4 +3,5 @@
 export(kml_cortar)
 export(t_expkml)
 export(t_impkml)
+export(tse_colores)
 export(tse_theme)

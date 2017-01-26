@@ -4,7 +4,7 @@
 \alias{kml_cortar}
 \title{Reduce un KML a otra geografia}
 \usage{
-kml_cortar(obj, condicion, verbose)
+kml_cortar(obj, condicion, verbose = TRUE)
 }
 \arguments{
 \item{obj}{Objeto SpatialPolygonsDataFrame}
