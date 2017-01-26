@@ -30,14 +30,14 @@ tse_theme <- function(tipo = "hc") {
 tse_colores <- function(paleta){
   
   if(paleta == 1){
-    p <- c(rgb(3,7,27, maxColorValue = 255), #Azul 1
-           rgb(11,22,80, maxColorValue = 255), #Azul 2
-           rgb(16,33,121, maxColorValue = 255), #Azul 3
-           rgb(25,52,188, maxColorValue = 255), #Azul 4
-           rgb(67,94,228, maxColorValue = 255), #Azul 5
-           rgb(135,152,237, maxColorValue = 255), #Azul 6
-           rgb(188,197,245, maxColorValue = 255), #Azul 7
-           rgb(228,232,251, maxColorValue = 255) #Azul 8 
+    p <- c(rgb(3,7,27,166, maxColorValue = 255), #Azul 1
+           rgb(11,22,80,166, maxColorValue = 255), #Azul 2
+           rgb(16,33,121,166, maxColorValue = 255), #Azul 3
+           rgb(25,52,188,166, maxColorValue = 255), #Azul 4
+           rgb(67,94,228,166, maxColorValue = 255), #Azul 5
+           rgb(135,152,237,166, maxColorValue = 255), #Azul 6
+           rgb(188,197,245,166, maxColorValue = 255), #Azul 7
+           rgb(228,232,251,166, maxColorValue = 255) #Azul 8 
     )  
   }
   p
