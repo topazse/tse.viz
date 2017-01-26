@@ -52,7 +52,7 @@ t_expkml <- function(obj, archivo,
                    maptools::kmlPolygon(x, # Objeto es de una funcion anonima
                                         name = as(get(obj), "data.frame")[slot(x, "ID"), col_nombre],
                                         # el nombre lo pega como un data.frame del slot ID (subset por id)
-                                        col = get(mapa_colores)[as.numeric(as(get(obj), "data.frame")[slot(x, "ID"), col_color])],
+                                        col = mapa_colores[as.numeric(as(get(obj), "data.frame")[slot(x, "ID"), col_color])],
                                         # pega el color, pero deacuerdo al ID y tema de color (subsets por id)
                                         lwd = 0.5, # tamano de stroke
                                         border = NA, # borders
