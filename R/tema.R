@@ -29,7 +29,7 @@ tse_theme <- function(tipo = "hc") {
 #' @export
 tse_colores <- function(paleta){
   
-  switch(paleta,
+  p <- switch(paleta,
          # paleta en colores de rgba
          c(rgb(3,7,27,166, maxColorValue = 255), #Azul 1
            rgb(11,22,80,166, maxColorValue = 255), #Azul 2
@@ -49,4 +49,5 @@ tse_colores <- function(paleta){
            "#f8cbb2", #rosa
            "#ea7a7a" #rosa fuerte
           ))
+  p <- as.character(p)
 }
