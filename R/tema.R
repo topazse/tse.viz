@@ -50,4 +50,5 @@ tse_colores <- function(paleta){
            "#ea7a7a" #rosa fuerte
           ))
   p <- as.character(p)
+  p
 }
